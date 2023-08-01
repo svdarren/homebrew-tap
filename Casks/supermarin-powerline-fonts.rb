@@ -27,5 +27,7 @@ cask "supermarin-powerline-fonts" do
   font "SourceCodePro/Source Code Pro Regular for Powerline.otf"
   font "SourceCodePro/Source Code Pro Semibold for Powerline.otf"
 
-  caveats "Installed fonts will not be visible until the system is rebooted."
+  caveats do
+    reboot
+  end
 end
